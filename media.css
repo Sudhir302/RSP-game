@@ -1,0 +1,48 @@
+/* added media 467px to 697px */
+
+@media screen and (min-width:467px) and (max-width: 697px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .game{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen  and (min-width: 332px)and (max-width:467px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .game{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .score{
+        margin-top: 30px;
+    }
+    .playerscore p{
+        font-size: 1.3rem;
+    }
+    
+    .computerscore p{
+        font-size: 1.3rem;
+    }
+    
+    #button{
+        margin-top: 50px;
+        font-size: 1.8rem;
+    }
+}
