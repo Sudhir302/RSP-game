@@ -26,7 +26,10 @@ header{
     width: 100%;
     
 }
-
+.choice{
+    width: 220px;
+    height: 220px;
+}
 img{
     width: 210px;
     height: 210px;
@@ -35,6 +38,7 @@ img{
 }
 
 .choice:hover{
+    border-radius: 50%;
     border: 5px solid black;
     cursor: pointer;
 }

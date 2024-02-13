@@ -11,6 +11,8 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .
 }
 
 @media screen  and (min-width: 332px)and (max-width:467px){
@@ -29,6 +31,7 @@
     img{
         width: 150px;
         height: 150px;
+        border-radius: 50%;
     }
     .score{
         margin-top: 30px;
@@ -44,5 +47,14 @@
     #button{
         margin-top: 50px;
         font-size: 1.8rem;
+    }
+    .choice{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+    .choice:hover{
+        border: 5px solid black;
+        cursor: pointer;
     }
 }
