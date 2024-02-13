@@ -44,6 +44,8 @@ let playGame = () => {
         drawGame();
         document.querySelector("#button").innerText = "Game Draw. Play Again!";
         document.querySelector("#button").style.backgroundColor = "black";
+        const drawAudio = document.querySelector("#drawaudio");
+        drawAudio.play()
     }
 
     else if(userChoice === "rockie" && compChoice === "pappey"){
@@ -51,6 +53,8 @@ let playGame = () => {
         document.querySelector("#button").innerText = `${compChoice.toUpperCase()} Beats Your ${userChoice.toUpperCase()}`;
         document.querySelector("#button").style.backgroundColor = "red";
         document.querySelector("#computer").innerText = ++compScore;
+        const loseAudio = document.querySelector("#loseaudio");
+        loseAudio.play();
 
     }
     else if(userChoice === "scissey" && compChoice === "rockie"){
@@ -58,18 +62,24 @@ let playGame = () => {
         document.querySelector("#button").innerText = `${compChoice.toUpperCase()} Beats Your ${userChoice.toUpperCase()}`;
         document.querySelector("#button").style.backgroundColor = "red";
         document.querySelector("#computer").innerText = ++compScore;
+        const loseAudio = document.querySelector("#loseaudio");
+        loseAudio.play();
     }
     else if(userChoice === "pappey" && compChoice === "scissey"){
         compWin();
         document.querySelector("#button").innerText = `${compChoice.toUpperCase()} Beats Your ${userChoice.toUpperCase()}`;
         document.querySelector("#button").style.backgroundColor = "red";
         document.querySelector("#computer").innerText = ++compScore;
+        const loseAudio = document.querySelector("#loseaudio");
+        loseAudio.play();
     }
     else {
         userWin();
         document.querySelector("#button").innerText = `Your ${userChoice.toUpperCase()} Beats ${compChoice.toUpperCase()}`;
         document.querySelector("#button").style.backgroundColor = "Green";
         document.querySelector("#player").innerText = ++userScore;
+        const winAudio = document.querySelector("#wonaudio");
+        winAudio.play()
         setTimeout(() => {
             const wonImg = document.querySelector(".hidden");wonImg.classList.remove("hidden")
             setTimeout(() => wonImg.classList.add("hidden"),1000);},0);
